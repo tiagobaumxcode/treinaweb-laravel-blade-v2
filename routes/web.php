@@ -117,3 +117,9 @@ Route::get('/issetandempy', function () {
         'variavel' => null
     ]);
 });
+
+Route::get('/loopandfor', function () {
+    return view('exemplos.loopandfor')->with([
+        'numero' => 7
+    ]);
+});
