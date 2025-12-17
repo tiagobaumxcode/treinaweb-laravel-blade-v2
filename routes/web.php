@@ -90,12 +90,30 @@ Route::get('/php/comentarios', function () {
 
 Route::get('/condicional/if', function () {
     return view('exemplos.condicional_if', [
-        'comentarios' => 3
+        'comentarios' => 5
     ]);
 });
 
 Route::get('/condicional/switch', function () {
     return view('exemplos.condicional_switch', [
         'mes' => ''
+    ]);
+});
+
+Route::get('/condicionalunless', function () {
+    return view('exemplos.condicionalunless')->with([
+        'nome' => 'TreinaWeb'
+    ]);
+});
+
+Route::get('/condicionalswitch', function () {
+    return view('exemplos.condicionalswitch')->with([
+        'nivelAcesso' => 1
+    ]);
+});
+
+Route::get('/issetandempy', function () {
+    return view('exemplos.issetandempy')->with([
+        'variavel' => null
     ]);
 });
