@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CompactorController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SiteHerancaController;
 use App\Http\Controllers\SiteComponenteController;
@@ -123,3 +124,15 @@ Route::get('/loopandfor', function () {
         'numero' => 7
     ]);
 });
+
+
+Route::get('/variaveloop', function () {
+    return view('exemplos.variaveloop')->with([
+        'numero' => 7
+    ]);
+});
+
+Route::get('/compactor',[CompactorController::class, 'home'])->name('compactor.home');
+Route::get('/compactor/portfolio',[CompactorController::class, 'portfolio'])->name('compactor.portfolio');
+Route::get('/compactor/sobre',[CompactorController::class, 'sobre'])->name('compactor.sobre');
+Route::get('/compactor/contato',[CompactorController::class, 'contato'])->name('compactor.contato');

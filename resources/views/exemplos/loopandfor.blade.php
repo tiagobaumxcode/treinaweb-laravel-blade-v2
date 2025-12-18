@@ -115,7 +115,7 @@ o fluxo de loops</p>
 @endphp
 <h4>Usando break:</h4>
 @foreach ($numbers as $number)
-    @if ($number == 6)
+    @if ($number == 6) {{-- Sai do loop ao chegar ao 6 --}}
         @break
     @endif
     <p> Número: {{ $number }}</p>
@@ -123,7 +123,7 @@ o fluxo de loops</p>
 <h4>Usando continue:</h4>
 @foreach ($numbers as $number)
     @if ($number % 2 == 0)
-        @continue
+        @continue {{-- Ignora os numeros pares --}}
     @endif
     <p> Número ímpar: {{ $number }}</p>
 @endforeach
