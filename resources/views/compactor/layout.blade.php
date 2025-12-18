@@ -11,7 +11,7 @@
 <body class="flex flex-col min-h-screen">
     
     <!-- Header/Menu no Topo -->
-    <header class="bg-gray-300 shadow-md">
+    <header class="bg-gray-900 shadow-md">
         <nav class="container mx-auto px-4 py-4">
             <div class="flex items-center justify-between">
                 <!-- Logo -->
@@ -28,7 +28,7 @@
                         Sobre
                     </a>
                     <a href="{{ route('compactor.portfolio') ?? '/' }}" class="text-blue-600 hover:text-blue-800 transition duration-300">
-                        Serviços
+                        Porfolio
                     </a>
                     <a href="{{ route('compactor.contato') ?? '/' }}" class="text-blue-600 hover:text-blue-800 transition duration-300">
                         Contato
@@ -62,14 +62,14 @@
     </header>
 
     <!-- Conteúdo Principal -->
-    <main class="flex-grow bg-black text-gray-300">
+    <main class="flex-grow bg-black text-gray-500">
         <div class="container mx-auto px-4 py-8">
             @yield('content')
         </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-300 mt-auto">
+    <footer class="bg-gray-900 mt-auto">
         <div class="container mx-auto px-4 py-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <!-- Coluna 1 -->
@@ -96,7 +96,7 @@
                     <ul class="space-y-2 text-sm text-blue-600">
                         <li>Email: contato@meusite.com</li>
                         <li>Telefone: (21) 1234-5678</li>
-                        <li>Endereço: São Gonçalo, RJ</li>
+                        <li>Endereço: Rio de Janeiro, RJ</li>
                     </ul>
                 </div>
             </div>
