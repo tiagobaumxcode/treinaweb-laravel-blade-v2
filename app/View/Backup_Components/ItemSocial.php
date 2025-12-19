@@ -2,39 +2,28 @@
 
 namespace App\View\Components;
 
-use Closure;
-use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class ItemSocial extends Component
 {
+    public string $link;
+
     /**
      * Create a new component instance.
+     *
+     * @return void
      */
-
-
-
-//Declaração de propriedades
-
-
-
-public $link;
-public $nomeLink;
-
-
-
-
-    public function __construct($link, $nomeLink)
+    public function __construct(string $link)
     {
         $this->link = $link;
-        $this->nomeLink = $nomeLink;
     }
-    
 
     /**
      * Get the view / contents that represent the component.
+     *
+     * @return \Illuminate\Contracts\View\View|\Closure|string
      */
-    public function render(): View|Closure|string
+    public function render()
     {
         return view('components.item-social');
     }

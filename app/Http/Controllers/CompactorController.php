@@ -6,7 +6,7 @@ class CompactorController extends Controller
 {
     public function home()
     {
-        return view('compactor.home');
+        return view('compactor.homecomponent');
     }
 
     public function portfolio()
@@ -21,6 +21,6 @@ class CompactorController extends Controller
 
     public function contato()
     {
-        return view('compactor.contato');
+        return view('compactor.contatocomponent');
     }
 }   

@@ -1,8 +1,3 @@
-@extends('compactor.layout')
-
-@section('content')
-  
-
 <!-- Header da Página -->
     <div class="text-center py-12 mb-12 border-b border-gray-700">
         <h1 class="text-5xl font-bold text-gray-100 mb-4">Entre em Contato</h1>
@@ -328,6 +323,3 @@
             </div>
         </div>
     </section>
-
-
-@endsection

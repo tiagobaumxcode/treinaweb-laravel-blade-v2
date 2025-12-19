@@ -1,7 +1,9 @@
-@extends('compactor.layout')
 
-@section('content')
-   <!-- Seção Hero/Apresentação -->
+<x-layout-patt>
+
+<x-conteudo-principal>
+    @section('content')
+        <!-- Seção Hero/Apresentação -->
     <div class="text-center py-12 mb-12 border-b border-gray-700">
         <h1 class="text-5xl font-bold text-gray-100 mb-4">Olá, eu sou Desenvolvedor</h1>
         <p class="text-xl text-gray-400 mb-6">Desenvolvedor Full Stack | Laravel | PHP | JavaScript</p>
@@ -359,8 +361,7 @@
             </a>
         </div>
     </section>
-
-
-
-
-@endsection
+    @endsection
+</x-conteudo-principal>    
+    
+</x-layout-patt>
